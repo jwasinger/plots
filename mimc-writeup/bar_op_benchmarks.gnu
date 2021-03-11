@@ -4,7 +4,7 @@ set output "op_benchmarks.png"
 # set xlabel "x value"    #set x and y label
 set ylabel "Execution Time (ns)"
 set xrange [-0.5:5]    #set x and y range
-set yrange [0:300]
+set yrange [0:450]
 # set xtics 0,1,4    #set xtics
 set style fill solid    #set plot style
 set boxwidth 0.5
