@@ -1,5 +1,5 @@
-0   "OpAddmod256"    23.30
-1   "OpSubmod256"    25.4
-2   "OpMulmodmont256"    46.0
-3   "OpAddmod"    210
-4   "OpMulmod"    270
+0   "OpAddmod256"    33.1
+1   "OpSubmod256"    33.6
+2   "OpMulmodmont256"    59.3
+3   "OpAddmod"    303
+4   "OpMulmod"    397
