@@ -1,0 +1,5 @@
+Browser "Op Benchmarks" "Arithmetic Benchmarks"
+AddMod          30%     10%
+MulMod          40%     20%
+MulModMont256   20%     5%
+AddMod256       30%     10%
