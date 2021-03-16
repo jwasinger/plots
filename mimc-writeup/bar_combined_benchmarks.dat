@@ -1,5 +1,5 @@
-Browser "Op Benchmarks" "Arithmetic Benchmarks"
-AddMod          30%     10%
-MulMod          40%     20%
-MulModMont256   20%     5%
-AddMod256       30%     10%
+Browser "Arithmetic Benchmarks" "Geth EVM Opcode Benchmarks"
+AddMod256       8.71 28.4
+MulModMont256   33.0 54.6
+ADDMOD          118 213
+MULMOD          219 313

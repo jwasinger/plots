@@ -4,6 +4,8 @@ set output "bar_combined_benchmarks.png"
 
 set style data histogram
 set style histogram cluster gap 1
+set ylabel "Execution Time (ns)"
+
 
 set style fill solid border rgb "black"
 set auto x
