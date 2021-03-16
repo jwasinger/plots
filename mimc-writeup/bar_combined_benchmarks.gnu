@@ -9,8 +9,8 @@ set ylabel "Execution Time (ns)"
 
 set style fill solid border rgb "black"
 set auto x
-set yrange [0:*]
+set yrange [0:400]
 plot 'bar_combined_benchmarks.dat' using 2:xtic(1) title col, \
         '' using 3:xtic(1) title col, \
-        '' using (($0 - 1) - 0.2):2:2 with labels notitle, \
-        '' using (($0 - 1) + 0.2):3:2 with labels notitle
+        '' using (($0 - 1) - 0.15):($2 + 7):2 with labels notitle, \
+        '' using (($0 - 1) + 0.2):($3 + 7):3 with labels notitle
