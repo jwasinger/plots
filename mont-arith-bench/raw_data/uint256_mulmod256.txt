@@ -1,0 +1,1 @@
+BenchmarkMulMod/mod256/uint256           6472490               176.9 ns/op

@@ -1,0 +1,1 @@
+BenchmarkAddMod/mod256/uint256          12280882                96.82 ns/op

@@ -1,0 +1,1 @@
+BenchmarkMulModMont/num_limbs=6     	20254722	        29.27 ns/op
