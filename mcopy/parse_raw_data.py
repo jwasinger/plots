@@ -29,7 +29,7 @@ def format_model(points, slope, intercept) -> [int]:
 # 3 column format 
 # copy_size | fitted_x | fitted_y
 def format_model_csv(dataset: []) -> str:
-	result = []
+	result = ["Model, Model"]
 	xs = np.array([int(x_val) for (_, x_val, _) in dataset])
 	ys = np.array([int(y_val) for (_, _, y_val) in dataset])
 
@@ -38,15 +38,15 @@ def format_model_csv(dataset: []) -> str:
 
 	model_points = format_model(range(256, int(dataset[-1][1]), 256), slope, intercept)
 	for (i, (x, y)) in enumerate(model_points):
-		result.append("{}, {}, {}".format(x, x, y))
+		result.append("{}, {}".format(x, y))
 
 	return "\n".join(result)
 
 def format_mcopy_perf_csv(dataset: []) -> str:
-	result = []
-	for (i, (_, copy_size, performance)) in enumerate(dataset):
+	result = ["\"MCOPY Performance\", \"MCOPY Performance\""]
+	for (_, copy_size, performance) in dataset:
 		performance_gas = round(performance / 10)
-		result.append("{}, {}, {}".format(i, copy_size, performance_gas))
+		result.append("{}, {}".format(copy_size, performance))
 	
 	return "\n".join(result)
 
