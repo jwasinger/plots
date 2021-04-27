@@ -2,10 +2,10 @@ set term png
 set output "graphs/mulmodmont_small.png"
 set key autotitle columnhead
 
-set xrange [0:20]
-set yrange [0:140]
-
-set xlabel "Limb Count"
+set xlabel "Limb Count (64-bit limbs)"
 set ylabel "Gas Price"
 
-plot 'data/mulmodmont.csv' every ::::15 using 1:2 with points, 'data/mulmodmont.csv' using 1:3 with lines
+set xrange [0:10]
+set yrange [0:25]
+
+plot 'data/op_bench_mulmont.csv' every ::::9 using 1:2 with points, 'data/mulmont_model.csv' every ::::9 using 1:2 with lines, 'data/op_bench_blstasm384_mulmont.csv' every ::::9 using 1:2 with points
