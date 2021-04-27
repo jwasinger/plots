@@ -2,7 +2,7 @@ set term png
 set output "graphs/submont_large.png"
 set key autotitle columnhead
 
-set xlabel "Limb Count"
+set xlabel "Limb Count (64-bit limbs)"
 set ylabel "Gas Price"
 
 set xrange [0:130]
