@@ -5,4 +5,4 @@ set key autotitle columnhead
 set xlabel "Limb Count"
 set ylabel "Gas Price"
 
-plot 'data/mulmodmont.csv' using 1:2 with points, 'data/mulmodmont.csv' using 1:3 with lines, 'data/mulmodmont_blstasm384.csv' using 1:2 with points
+plot 'data/op_bench_mulmont.csv' using 1:2 with points, 'data/mulmont_model.csv' using 1:2 with lines, 'data/op_bench_blstasm384_mulmont.csv' using 1:2 with points
