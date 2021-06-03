@@ -35,8 +35,10 @@ def format_model_csv(dataset: []) -> str:
 
 	slope, _ = np.polyfit(xs, ys, 1)
 	intercept = ys[0] # make sure the model doesn't have negative values :)
+	import pdb; pdb.set_trace()
 
 	model_points = format_model(range(256, int(dataset[-1][1]), 256), slope, intercept)
+
 	for (i, (x, y)) in enumerate(model_points):
 		result.append("{}, {}".format(x, y))
 
@@ -50,7 +52,7 @@ def format_mcopy_perf_csv(dataset: []) -> str:
 	
 	return "\n".join(result)
 
-dataset = parse_dataset('raw_data.txt')
+dataset = parse_dataset('raw_data.txt')[:312]
 # format_graph_csv(dataset)
 model_csv = format_model_csv(dataset)
 perf_csv = format_mcopy_perf_csv(dataset)
