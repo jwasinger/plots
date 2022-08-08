@@ -1,4 +1,0 @@
-op name, limb count, estimated runtime (ns)
-ADDMODMAX,6,28
-SUBMODMAX,6,28
-MULMONTMAX,6,63
