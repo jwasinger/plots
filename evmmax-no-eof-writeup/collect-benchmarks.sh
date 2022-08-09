@@ -3,9 +3,9 @@
 benchmark_dir="benchmarks-results"
 
 echo "running go/asm arithmetic benchmarks"
-(cd mont-arith && go test -bench=.*Asm | python3 ../format-geth-benchmark-output-as-csv.py) > $benchmark_dir/go-arith-benchmarks.csv
-(cd mont-arith && go test -bench=.*Go | python3 ../format-geth-benchmark-output-as-csv.py) >> $benchmark_dir/go-arith-benchmarks.csv
-(cd mont-arith && go test -bench=SetMod | python3 ../format-geth-benchmark-output-as-csv.py) >> $benchmark_dir/go-arith-benchmarks.csv
+(cd mont-arith && go test -run=^$ -bench=.*Asm | python3 ../format-geth-benchmark-output-as-csv.py) > $benchmark_dir/go-arith-benchmarks.csv
+(cd mont-arith && go test -run=^$ -bench=.*Go | python3 ../format-geth-benchmark-output-as-csv.py) >> $benchmark_dir/go-arith-benchmarks.csv
+(cd mont-arith && go test -run=^$ -bench=SetMod | python3 ../format-geth-benchmark-output-as-csv.py) >> $benchmark_dir/go-arith-benchmarks.csv
 
 echo "running geth evm go benchmarks"
 GETH_EVM=$(pwd)/go-ethereum/build/bin/evm
